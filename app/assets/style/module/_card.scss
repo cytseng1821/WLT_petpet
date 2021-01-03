@@ -1,0 +1,123 @@
+.card {
+    border: 5px solid $white;
+    box-shadow: 0px 3px 6px $gray-card;
+    &-title {
+        margin-bottom: 0;
+    }
+    &-subtitle {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &-body {
+        padding: 0.5rem 1rem;
+    }
+    /* customed */
+    &-service {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $black;
+            opacity: 0.4;
+            transition: 0.5s;
+        }
+        &:hover::before {
+            opacity: 0;
+        }
+        h4 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+        img {
+            display: block;
+            height: 132px;
+            @include media-breakpoint-up(md) {
+                height: 210px;
+            }
+            @include media-breakpoint-up(lg) {
+                height: 350px;
+            }
+        }
+        &-1 {
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 210px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 350px;
+            }
+        }
+        &-2 {
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 182px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 303px;
+            }
+        }
+        &-subgroup {
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 160px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 267px;
+            }
+            .card-service-3, .card-service-4 {
+                width: 100%;
+                @include media-breakpoint-up(md) {
+                    height: 103px;
+                }
+                @include media-breakpoint-up(lg) {
+                    height: 172px;
+                }
+            }
+        }
+        &-5 {
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 125px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 172px;
+            }
+        }
+    }
+    &-achieve {
+        border-left: 2px solid $white;
+        height: 120px;
+        @include media-breakpoint-up(md) {
+            height: 212px;
+        }
+    }
+    &-sitter {
+        height: 121px;
+    }
+    &-img {
+        &-popular {
+            border: 5px solid $white;
+            height: 120px;
+        }
+        &-portrait {
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            border: 1px solid $white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        &-sitter {
+            height: 128px;
+        }
+    }
+}

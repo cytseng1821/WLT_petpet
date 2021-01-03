@@ -1,0 +1,50 @@
+// Related settings is locatted at "bootstrap/_image.scss"
+.img {
+    &-cover {
+        object-fit: cover;
+        object-position: center;
+    }
+    &-index {
+        background-color: $tertiary;
+        width: 100%;
+        height: 352px;
+        @include media-breakpoint-up(md) {
+            position: relative;
+            width: 210px;
+            height: 288px;
+        }
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 530px;
+            height: 736px;
+        }
+    }
+    &-boarding {
+        height: 315px;
+    }
+    &-detail {
+        &-lg {
+            height: 282px;
+            @include media-breakpoint-up(md) {
+                height: 221px;
+            }
+            @include media-breakpoint-up(lg) {
+                height: 440px;
+            }
+        }
+        &-sm {
+            width: 82px;
+            height: 82px;
+            @include media-breakpoint-up(md) {
+                width: 63px;
+                height: 63px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 96px;
+                height: 96px;
+            }
+        }
+    }
+}

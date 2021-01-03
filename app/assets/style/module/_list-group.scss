@@ -1,0 +1,28 @@
+.list-group {
+    &-item {
+        border: 1px solid $gray-page;
+        &:first-child {
+            border-radius: 4px 0px 0px 4px;
+        }
+        &:last-child {
+            border-radius: 0px 4px 4px 0px;
+        }
+        &.active {
+            border-color: $gray-page;
+        }
+    }
+    &-item + &-item {
+        border-top-width: 1px;
+        border-left-width: 0;
+    }
+    &-item + &-item.active {
+        margin-top: 0;
+    }
+    &-item-action {
+        color: $primary;
+        &:hover, &:focus {
+            background: $primary;
+            color: $white;
+        }
+    }
+}

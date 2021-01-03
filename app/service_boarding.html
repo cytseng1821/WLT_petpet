@@ -1,0 +1,342 @@
+---
+title: PETPET | 寵物寄宿
+layout: ./app/layout.ejs
+engine: ejs
+current: service_boarding
+---
+
+<main>
+    <div class="bg-boarding bg-cover d-md-none"></div>
+    <div class="container py-3 py-md-15">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-4 align-self-md-center text-center text-md-left">
+                <h2 class="font-size-2xl font-size-4xl">寵物寄宿</h2>
+                <h3 class="font-cize-lg font-size-md-xl mt-1 mt-md-2 mt-lg-4">給您的毛孩最舒適的環境</h3>
+            </div>
+            <div class="col-md-7 col-lg-8 d-none d-md-block">
+                <img class="img-boarding img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-1.png" alt="the background of homestay's header">
+            </div>
+        </div>
+    </div>
+    <div class="bg-tertiary py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form action="service_boarding.html">
+                        <div class="row-custom">
+                            <div class="col-custom-1">
+                                <select class="custom-select pl-4" name="breed">
+                                    <option value="cat" selected>貓</option>
+                                    <option value="dog">狗</option>
+                                </select>
+                            </div>
+                            <div class="col-custom-2 ml-md-2">
+                                <select class="custom-select pl-4" name="region">
+                                    <option value="kaohsiung" selected>高雄市</option>
+                                    <option value="tainan">台南市</option>
+                                    <option value="taichung">台中市</option>
+                                    <option value="taipei">台北市</option>
+                                    <option value="newtaipei">新北市</option>
+                                </select>
+                            </div>
+                            <div class="col-custom-2 mt-2 mt-md-0 ml-md-2">
+                                <select class="custom-select pl-4" name="date-start">
+                                    <option value="20201120" selected>2020-11-20</option>
+                                    <option value="20201121">2020-11-21</option>
+                                    <option value="20201122">2020-11-22</option>
+                                    <option value="20201123">2020-11-23</option>
+                                    <option value="20201124">2020-11-24</option>
+                                    <option value="20201125">2020-11-25</option>
+                                    <option value="20201126">2020-11-26</option>
+                                </select>
+                            </div>
+                            <label for="date-end" class="d-none d-md-flex align-items-center ml-2 mb-0">至</label>
+                            <div class="col-custom-2 mt-2 mt-md-0 ml-md-2">
+                                <select id="date-end" class="custom-select pl-4" name="date-end">
+                                    <option value="20201121" selected>2020-11-21</option>
+                                    <option value="20201122">2020-11-22</option>
+                                    <option value="20201123">2020-11-23</option>
+                                    <option value="20201124">2020-11-24</option>
+                                    <option value="20201125">2020-11-25</option>
+                                    <option value="20201126">2020-11-26</option>
+                                    <option value="20201127">2020-11-27</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-15 py-lg-20">
+        <h2 class="font-size-3xl">本月熱門寄宿</h2>
+        <ul class="row list-unstyled mt-3">
+            <li class="col-12 col-md-4">
+                <div class="card align-items-center">
+                    <img class="card-img-top card-img-popular img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-2.jpeg" alt="the background of 1st popular sitter card">
+                    <img class="card-img-portrait" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/person-1.png" alt="the portrait of 1st popular sitter">
+                    <h3 class="card-title font-size-lg font-weight-medium mt-13">Jamie</h3>
+                    <h4 class="card-subtitle font-size-base font-weight-normal mt-1">寄宿、美容、寵物行為訓練</h4>
+                    <a href="#reserve_popular1" class="btn-reserve btn btn-secondary border-secondary-dark mt-3" type="button">預約</a>
+                    <div class="d-flex mt-6 mb-7">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>獲得評價</p>
+                            <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">198</span>則</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center ml-15 ml-md-8 ml-lg-15">
+                            <p>已完成訂單</p>
+                            <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">580</span>件</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-12 col-md-4 mt-3 mt-md-0">
+                <div class="card align-items-center">
+                    <img class="card-img-top card-img-popular img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-3.jpeg" alt="the background of 2nd popular sitter card">
+                    <img class="card-img-portrait" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/person-2.png" alt="the portrait of 2nd popular sitter">
+                    <h3 class="card-title font-size-lg font-weight-medium mt-13">Eric</h3>
+                    <h4 class="card-subtitle font-size-base font-weight-normal mt-1">寄宿、美容</h4>
+                    <a href="#reserve_popular2" class="btn-reserve btn btn-secondary border-secondary-dark mt-3" type="button">預約</a>
+                    <div class="d-flex mt-6 mb-7">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>獲得評價</p>
+                            <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">76</span>則</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center ml-15 ml-md-8 ml-lg-15">
+                            <p>已完成訂單</p>
+                            <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">208</span>件</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-12 col-md-4 mt-3 mt-md-0">
+                <div class="card align-items-center">
+                    <img class="card-img-top card-img-popular img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-4.jpeg" alt="the background of 3rd popular sitter card">
+                    <img class="card-img-portrait" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/person-3.png" alt="the portrait of 3rd popular sitter">
+                    <h3 class="card-title font-size-lg font-weight-medium mt-13">Yvonne</h3>
+                    <h4 class="card-subtitle font-size-base font-weight-normal mt-1">美容、寵物行為訓練</h4>
+                    <a href="#reserve_popular3" class="btn-reserve btn btn-secondary border-secondary-dark mt-3" type="button">預約</a>
+                    <div class="d-flex mt-6 mb-7">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>獲得評價</p>
+                            <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">52</span>則</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center ml-15 ml-md-8 ml-lg-15">
+                            <p>已完成訂單</p>
+                            <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">196</span>件</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="sitter-page1" role="tabpanel" aria-labelledby="sitter-pageitem1">
+                <ul class="row list-unstyled mt-10 mt-md-15 mt-lg-20">
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-2.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">寵屋屋</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、美容洗澡、到府保姆</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter1" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter1" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-3.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">毛孩好家</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、美容洗澡、到府保姆</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter2" class="btn-z2 btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter2" class="btn-z2 btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                            <a href="service_detail.html" class="stretched-link"></a>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0 mt-3 mt-md-0">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-4.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">妖貓X僕SS</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、美容洗澡</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter3" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter3" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0 mt-3 mt-md-5 mt-lg-0">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-5.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">貓是主我是僕</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、美容洗澡、到府保姆</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter4" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter4" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0 mt-3 mt-md-5 mt-lg-8">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-6.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">汪汪隊</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、到府保姆、寵物行為訓練</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter5" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter5" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0 mt-3 mt-md-5 mt-lg-8">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-7.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">卯咪</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、寵物行為訓練</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter6" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter6" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0 mt-3 mt-md-5 mt-lg-8">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-2.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">貓狗大戰</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、美容洗澡、到府保姆</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter7" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter7" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-6 col-md-4 col-lg-3">
+                        <div class="card border-0 mt-3 mt-md-5 mt-lg-8">
+                            <img class="card-img-top card-img-sitter img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-8.jpeg" alt="the background of 1st sitter card">
+                            <div class="card-sitter card-body bg-white-dusky pl-md-3 pl-lg-4">
+                                <h3 class="card-title font-size-base font-weight-normal">萌寵底家</h3>
+                                <small class="d-flex text-tertiary mt-1">
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                    <span class="material-icons align-middle d-block md-20">star</span>
+                                </small>
+                                <div class="card-text font-size-sm mt-1">寄宿、到府保姆</div>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#contact_sitter8" class="btn btn-outline-primary border-0 w-100 py-3">聯繫</a>
+                                <a href="#reserve_sitter8" class="btn btn-outline-secondary border-0 w-100 py-3">預約</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="sitter-page2" role="tabpanel" aria-labelledby="sitter-pageitem2">
+                <h3 class="mt-10 mt-md-15 mt-lg-20">Page2</h3>
+            </div>
+            <div class="tab-pane fade" id="sitter-page3" role="tabpanel" aria-labelledby="sitter-pageitem3">
+                <h3 class="mt-10 mt-md-15 mt-lg-20">Page3</h3>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col d-flex justify-content-end">
+                <div class="list-group flex-row" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action" id="sitter-pageitem-prev" data-toggle="list" href="#sitter-page-prev" role="tab" aria-controls="sitter-page-prev">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                    <a class="list-group-item list-group-item-action active" id="sitter-pageitem1" data-toggle="list" href="#sitter-page1" role="tab" aria-controls="sitter-page1">1</a>
+                    <a class="list-group-item list-group-item-action" id="sitter-pageitem2" data-toggle="list" href="#sitter-page2" role="tab" aria-controls="sitter-page2">2</a>
+                    <a class="list-group-item list-group-item-action" id="sitter-pageitem3" data-toggle="list" href="#sitter-page3" role="tab" aria-controls="sitter-page3">3</a>
+                    <a class="list-group-item list-group-item-action" id="sitter-pageitem-next" data-toggle="list" href="#sitter-page-next" role="tab" aria-controls="sitter-page-prev">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </div>
+                <!-- <ul class="pagination list-unstyled" id="list-tab" role="tablist">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" id="sitter-pageitem1" data-toggle="list" href="#sitter-page1" role="tab" aria-controls="sitter-page1">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" id="sitter-pageitem2" data-toggle="list" href="#sitter-page2" role="tab" aria-controls="sitter-page2">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" id="sitter-pageitem3" data-toggle="list" href="#sitter-page3" role="tab" aria-controls="sitter-page3">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+</main>

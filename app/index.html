@@ -1,0 +1,214 @@
+---
+title: PETPET | 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 d-sm-flex justify-content-sm-center">
+                <img class="img-index img-cover mt-md-26 mt-lg-0" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-1.png" alt="the background of index's header">
+            </div>
+        </div>
+    </div>
+    <header class="container">
+        <section class="row bg-index justify-content-center justify-content-lg-end">
+            <div class="col-12 col-md-7 align-self-lg-center">
+                <h2 class="font-size-2xl font-size-md-3xl font-size-lg-4xl mt-3 mt-md-6">寵物服務，盡在 PETPET</h2>
+                <h3 class="font-size-lg font-size-lg-xl mt-1 mt-md-2 mt-lg-4">當您的毛孩有需要時，<span class="d-lg-none"><br></span>幫您找到最合適的服務者！</h3>
+                <form action="index.html" class="mt-3 mt-md-5 mt-lg-12">
+                    <div class="d-flex flex-wrap flex-lg-nowrap">
+                        <select class="custom-select custom-select-short font-size-lg" name="breed">
+                            <option value="no" selected disabled>品種</option>
+                            <option value="dog">狗</option>
+                            <option value="cat">貓</option>
+                        </select>
+                        <select class="custom-select custom-select-long font-size-lg mt-4 mt-md-3 mt-lg-0" name="service">
+                            <option value="no" selected disabled>服務</option>
+                            <option value="boarding">寵物寄宿</option>
+                            <option value="grooming">寵物美容</option>
+                            <option value="homecare">到府照顧</option>
+                            <option value="walksitter">遛狗保姆</option>
+                            <option value="training">行為訓練</option>
+                        </select>
+                        <select class="custom-select custom-select-long font-size-lg mt-4 mt-md-3 mt-lg-0" name="region">
+                            <option value="no" selected disabled>地區</option>
+                            <option value="newtaipei">新北市</option>
+                            <option value="taipei">台北市</option>
+                            <option value="taichung">台中市</option>
+                            <option value="tainan">台南市</option>
+                            <option value="kaohsiung">高雄市</option>
+                        </select>
+                        <input type="submit" class="btn-search btn btn-secondary border-secondary-dark font-size-lg mt-3 mt-md-4 mt-lg-0" value="搜尋">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="mt-15 mt-md-20">
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-size-3xl">本月熱門保姆</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="font-size-lg font-weight-medium mt-1">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</h3>
+                </div>
+            </div>
+            <ul class="row list-unstyled mt-3">
+                <li class="col-12 col-md-4">
+                    <div class="card align-items-center">
+                        <img class="card-img-top card-img-popular img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-2.jpeg" alt="the background of 1st popular sitter card">
+                        <img class="card-img-portrait" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/person-1.png" alt="the portrait of 1st popular sitter">
+                        <h4 class="card-title font-size-lg font-weight-medium mt-13">Jamie</h4>
+                        <h5 class="card-subtitle font-size-base font-weight-normal mt-1">寄宿、美容、寵物行為訓練</h5>
+                        <a href="#reserve_popular1" class="btn-reserve btn btn-secondary border-secondary-dark mt-3" type="button">預約</a>
+                        <div class="d-flex mt-6 mb-7">
+                            <div class="d-flex flex-column align-items-center">
+                                <p>獲得評價</p>
+                                <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">198</span>則</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center ml-15 ml-md-8 ml-lg-15">
+                                <p>已完成訂單</p>
+                                <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">580</span>件</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-4 mt-3 mt-md-0">
+                    <div class="card align-items-center">
+                        <img class="card-img-top card-img-popular img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-3.jpeg" alt="the background of 2nd popular sitter card">
+                        <img class="card-img-portrait" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/person-2.png" alt="the portrait of 2nd popular sitter">
+                        <h4 class="card-title font-size-lg font-weight-medium mt-13">Eric</h4>
+                        <h5 class="card-subtitle font-size-base font-weight-normal mt-1">寄宿、美容</h5>
+                        <a href="#reserve_popular2" class="btn-reserve btn btn-secondary border-secondary-dark mt-3" type="button">預約</a>
+                        <div class="d-flex mt-6 mb-7">
+                            <div class="d-flex flex-column align-items-center">
+                                <p>獲得評價</p>
+                                <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">76</span>則</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center ml-15 ml-md-8 ml-lg-15">
+                                <p>已完成訂單</p>
+                                <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">208</span>件</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 col-md-4 mt-3 mt-md-0">
+                    <div class="card align-items-center">
+                        <img class="card-img-top card-img-popular img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-4.jpeg" alt="the background of 3rd popular sitter card">
+                        <img class="card-img-portrait" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/person-3.png" alt="the portrait of 3rd popular sitter">
+                        <h4 class="card-title font-size-lg font-weight-medium mt-13">Yvonne</h4>
+                        <h5 class="card-subtitle font-size-base font-weight-normal mt-1">美容、寵物行為訓練</h5>
+                        <a href="#reserve_popular3" class="btn-reserve btn btn-secondary border-secondary-dark mt-3" type="button">預約</a>
+                        <div class="d-flex mt-6 mb-7">
+                            <div class="d-flex flex-column align-items-center">
+                                <p>獲得評價</p>
+                                <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">52</span>則</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center ml-15 ml-md-8 ml-lg-15">
+                                <p>已完成訂單</p>
+                                <p class="d-flex align-items-center font-size-sm mt-3"><span class="d-inline-block font-size-2xl font-weight-bold mr-1">196</span>件</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="mt-10 mt-md-15 mt-lg-20 mb-10 mb-md-15 mb-lg-20">
+            <div class="row">
+                <div class="col">
+                    <h2 class="font-size-3xl">線上預約</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="font-size-lg font-weight-medium mt-1">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</h3>
+                </div>
+            </div>
+            <div class="row text-white mt-3">
+                <div class="col d-flex flex-wrap flex-md-nowrap justify-content-md-between">
+                    <a href="service_boarding.html" class="card-service mt-1 mt-md-0">
+                        <img class="card-service-1 img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-5.jpeg" alt="">
+                        <h4 class="text-white font-size-xl">寵物寄宿</h4>
+                    </a>
+                    <a href="#service_grooming.html" class="card-service mt-1 mt-md-0">
+                        <img class="card-service-2 img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-6.jpeg" alt="">
+                        <h4 class="text-white font-size-xl">寵物美容</h4>
+                    </a>
+                    <div class="card-service-subgroup d-flex flex-column justify-content-between mt-1 mt-md-0">
+                        <a href="#service_homecare.html" class="card-service">
+                            <img class="card-service-3 img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-7.jpeg" alt="">
+                            <h4 class="text-white font-size-xl">到府照顧</h4>
+                        </a>
+                        <a href="#service_walksitter.html" class="card-service mt-1 mt-md-0">
+                            <img class="card-service-4 img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-8.jpeg" alt="">
+                            <h4 class="text-white font-size-xl">遛狗保姆</h4>
+                        </a>
+                    </div>
+                    <a href="#service_training.html" class="card-service mt-1 mt-md-0">
+                        <img class="card-service-5 img-cover" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-3.jpeg" alt="">
+                        <h4 class="text-white font-size-xl">行為訓練</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="bg-banner bg-cover pt-15 pt-md-20 pb-31 pb-md-33">
+        <div class="container text-white font-weight-medium">
+            <div class="row">
+                <div class="col d-flex justify-content-center d-md-block">
+                    <h2>PETPET目前已有</h2>
+                </div>
+            </div>
+            <ul class="row list-unstyled mt-12 mt-md-25">
+                <li class="col-9 offset-3 col-md-4 offset-md-0 col-lg-3">
+                    <div class="card-achieve">
+                        <p class="font-size-lg pl-4"><span class="d-inline-block font-size-5xl font-weight-bold">5278</span><br>
+                            人使用 PETPET</p>
+                    </div>
+                </li>
+                <li class="col-9 offset-3 col-md-4 offset-md-0 col-lg-3 mt-20 mt-md-0">
+                    <div class="card-achieve">
+                        <p class="font-size-lg pl-4"><span class="d-inline-block font-size-5xl font-weight-bold">580</span><br>
+                            人成為寵物保母</p>
+                    </div>
+                </li>
+                <li class="col-9 offset-3 col-md-4 offset-md-0 col-lg-3 mt-20 mt-md-0">
+                    <div class="card-achieve">
+                        <p class="font-size-lg pl-4"><span class="d-inline-block font-size-5xl font-weight-bold">10000+</span><br>
+                            已完成服務</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="container font-weight-medium pt-10 pb-15 py-md-15 py-lg-20">
+        <div class="row">
+            <div class="col">
+                <h2 class="font-size-3xl">預約流程</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="font-size-lg font-weight-medium mt-1">輕鬆三步驟，立即獲取最佳服務！</h3>
+            </div>
+        </div>
+        <ul class="row list-unstyled mt-3 mt-md-5">
+            <li class="col-12 col-md-4">
+                <p class="font-size-lg">1.查詢想要的服務</p>
+                <img class="mt-1" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-10.png" alt="">
+            </li>
+            <li class="col-12 col-md-4 mt-8 mt-md-0">
+                <p class="font-size-lg">2.找到合適的保姆</p>
+                <img class="mt-1" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-11.png" alt="">
+            </li>
+            <li class="col-12 col-md-4 mt-8 mt-md-0">
+                <p class="font-size-lg">3.填寫資料完成預約</p>
+                <img class="mt-1" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/index-12.png" alt="">
+            </li>
+        </ul>
+    </section>
+</main>

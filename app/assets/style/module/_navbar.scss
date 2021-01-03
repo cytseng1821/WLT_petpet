@@ -1,0 +1,25 @@
+.navbar {
+    padding: 0;
+    &-toggler {
+        padding: 0;
+    }
+    &-collapse {
+        flex-grow: 0;
+        &.collapsing, &.show {
+            .nav-link { // for navbar-nav at the top under 768px
+                padding: 0.75rem 0;
+                border-bottom: 1px solid $gray-card;
+                text-align: center;
+            }
+        }
+    }
+    &-expand-md {
+        @include media-breakpoint-up(md) {
+            .navbar-nav {
+                .nav-link { // for navbar-nav at the top over 768px
+                    padding: 1.25rem;
+                }
+            }
+        }
+    }
+}

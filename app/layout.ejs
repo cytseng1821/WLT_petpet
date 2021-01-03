@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-md justify-content-end justify-content-md-between position-relative">
+                    <h1 class="logo navbar-brand">
+                        <a href="index.html" class="text-tertiary-light">
+                            <img src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/logo.svg" alt="the logo of PETPET">
+                            PETPET
+                        </a>
+                    </h1>
+                    <button class="navbar-toggler collapsed my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons md-48 align-middle text-tertiary-light">dehaze</span>
+                    </button>
+                    <ul class="navbar-nav d-none d-md-flex mr-md-n5">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">預約服務</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">成為寵物保姆</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">登入</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- navbar-nav under 768px -->
+    <div class="row">
+        <div class="col">
+            <div class="collapse navbar-collapse d-md-none" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-md-n5">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">預約服務</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">成為寵物保姆</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <%- contents %>
+
+    <footer>
+        <div class="bg-tertiary py-9">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="font-size-lg font-size-4xl">有任何我們能幫助您的嗎？</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="font-size-base font-size-md-lg mt-3 mt-md-2">輸入電子信箱<br>
+                            將有專業人員在線幫您解決所有問題</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-9 col-lg-6">
+                        <form>
+                            <div class="input-group mt-4">
+                                <input type="mail" class="form-control-help form-control" name="mail" placeholder="examplde@gmail.com" required>
+                                <div class="input-group-append">
+                                    <input type="submit" class="btn-submit btn btn-secondary border-gray-control" value="送出">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-2 pt-md-15 pb-6 pb-md-7">
+            <div class="row d-none d-md-flex">
+                <div class="col-3">
+                    <h2 class="logo">
+                        <a href="index.html" class="d-block text-tertiary-light">
+                            <img class="d-block" src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/logo.svg" alt="the logo of PETPET">
+                            PETPET
+                        </a>
+                    </h2>
+                </div>
+                <div class="col-3 align-self-center">
+                    <h3 class="font-size-lg">寵物服務</h3>
+                </div>
+                <div class="col-3 align-self-center">
+                    <h3 class="font-size-lg">加入我們</h3>
+                </div>
+                <div class="col-3 align-self-center">
+                    <h3 class="font-size-lg">聯繫我們</h3>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled mt-6">
+                        <li>
+                            <a href="#about_us">關於我們</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#help_center">幫助中心</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#use_terms">使用條款</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#privacy_policy">隱私政策</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled mt-6">
+                        <li>
+                            <a href="service_boarding.html">寵物寄宿</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#service_homesitter.html">寵物到府保姆</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#service_grooming.html">寵物美容洗澡</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#service_training.html">寵物行為訓練</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul class="list-unstyled mt-6">
+                        <li>
+                            <a href="#join_sitter">成為寵物保姆</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#join_taxi">加入寵物計程車</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#download_app">專屬 APP 下載</a>
+                        </li>
+                        <li class="mt-6">
+                            <a href="#contract_terms">相關合約條款</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <a class="mt-6" href="mailto:petpet@petmail.com" target="_blank">petpet@petmail.com</a>
+                </div>
+            </div>
+            <div class="row font-weight-mediem mt-md-27">
+                <div class="col d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                    <h2 class="logo-normal d-md-none">
+                        <a href="index.html" class="text-tertiary-light">
+                            <img src="https://hexschool.github.io/webLayoutTraining1st/petpet-week8/logo.svg" alt="the logo of PETPET">
+                            PETPET
+                        </a>
+                    </h2>
+                    <div class="d-none d-md-flex align-items-center">
+                        <span class="material-icons align-middle mr-2">local_phone</span>
+                        <a class="font-size-lg" href="tel:+071234567" target="_blank">07-123-4567</a>
+                    </div>
+                    <p class="font-size-sm">Copyright © 2020 PetPet. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
