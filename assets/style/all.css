@@ -17449,6 +17449,12 @@ img {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/petpet-week8/homestay-1.png");
   height: 352px; }
 
+.material-icons.md-20 {
+  font-size: 20px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
 .logo {
   position: absolute;
   top: 50%;
@@ -17476,11 +17482,11 @@ img {
     height: 55px;
     overflow: hidden; }
 
-.material-icons.md-20 {
-  font-size: 20px; }
-
-.material-icons.md-48 {
-  font-size: 48px; }
+@media (min-width: 768px) {
+  .description {
+    position: absolute;
+    top: 0;
+    right: 0; } }
 
 .font-size-sm {
   font-size: 0.875rem; }
@@ -17546,6 +17552,9 @@ img {
   .font-weight-lg-medium {
     font-weight: 600; } }
 
+.text-decoration-underline {
+  text-decoration: underline; }
+
 .img-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -17571,6 +17580,27 @@ img {
 
 .img-boarding {
   height: 315px; }
+
+.img-detail-lg {
+  height: 282px; }
+  @media (min-width: 768px) {
+    .img-detail-lg {
+      height: 221px; } }
+  @media (min-width: 992px) {
+    .img-detail-lg {
+      height: 440px; } }
+
+.img-detail-sm {
+  width: 82px;
+  height: 82px; }
+  @media (min-width: 768px) {
+    .img-detail-sm {
+      width: 63px;
+      height: 63px; } }
+  @media (min-width: 992px) {
+    .img-detail-sm {
+      width: 96px;
+      height: 96px; } }
 
 .border-double {
   border-width: 2px !important; }
@@ -17656,15 +17686,18 @@ img {
     .btn-search {
       width: 95px; } }
 
-.btn-reserve {
-  padding: 0.75rem 0;
-  width: 160px; }
-
 .btn-submit {
   width: 160px; }
   @media (min-width: 768px) {
     .btn-submit {
       width: 160px; } }
+
+.btn-reserve {
+  padding: 0.75rem 0;
+  width: 160px; }
+
+.btn-contact, .btn-rightnow {
+  height: 48px; }
 
 .btn-z2 {
   z-index: 2; }
